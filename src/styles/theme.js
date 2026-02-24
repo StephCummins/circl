@@ -5,6 +5,7 @@ const theme = createTheme({
     background: {
       default: 'var(--background-dark)',
       secondary: 'var(--background-secondary)',
+      light: 'var(--background-light)',
       hightlight: 'var(--background-highlight)'
     },
     text: {

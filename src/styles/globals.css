@@ -3,6 +3,7 @@
 :root {
   --background-dark: #000000;
   --background-secondary: #2d334a;
+  --background-light: #f9f9f9;
   --background-highlight: #4dd8f6;
   --text-light: #ffffff;
   --text-dark: #000000;
@@ -24,4 +25,44 @@ body,
   overflow-x: hidden;
   overscroll-behavior: none;
   position: fixed;
+}
+
+.custom-text-field {
+  width: 325px;
+}
+
+.custom-text-field .MuiInputBase-root {
+  height: 56px;
+  background-color: var(--background-dark);
+  border-radius: 4px;
+}
+
+.custom-text-field .MuiInputLabel-root {
+  color: var(--text-light) !important;
+  transform: translate(14px, 14px) scale(1);
+}
+
+.custom-text-field .MuiInputLabel-shrink {
+  transform: translate(14px, -6px) scale(0.75) !important;
+  background-color: var(--background-dark);
+  padding: 0 4px;
+}
+
+.custom-text-field .MuiInputBase-input {
+  color: var(--text-light) !important;
+  font-size: 18px;
+  text-align: center;
+}
+
+.custom-text-field .MuiOutlinedInput-root fieldset {
+  border-color: var(--background-highlight) !important;
+}
+
+.btn-animate {
+  transition: transform 0.1s ease-in-out !important;
+}
+
+.btn-animate:active {
+  transform: scale(0.96) !important;
+  filter: brightness(0.9); /* Slightly darkens the color on click too */
 }
